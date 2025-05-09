@@ -1,0 +1,1270 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+    }
+  </style>
+  
+</head>
+
+<body class="max-w-[1920px] mx-auto text-black text-sm">
+  <div class="bg-white">
+    <header class="py-4 px-4 sm:px-10 bg-white z-50 fixed top-0 left-0 w-full shadow-md">
+      <div class='max-w-7xl w-full mx-auto flex flex-wrap items-center gap-4'>
+        <a href="javascript:void(0)"><img src="assets/images/JCCompensationLedgerLogo.webp" alt="logo" class='w-10' />
+        </a>
+
+        <div id="collapseMenu"
+          class='max-lg:hidden lg:!block max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0'>
+          <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                data-original="#000000"></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                data-original="#000000"></path>
+            </svg>
+          </button>
+
+          <ul
+            class='lg:!flex lg:ml-12 lg:space-x-6 max-lg:space-y-6 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+            <li class='max-lg:border-b max-lg:py-2 px-3 group relative'><a href='javascript:void(0)'
+                class='hover:text-blue-600 block font-semibold transition-all'>Pages
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current inline ml-1.5" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                    clip-rule="evenodd" data-original="#000000" />
+                </svg>
+              </a>
+
+              <ul
+                class='absolute shadow-lg bg-white space-y-3 lg:top-5 max-lg:top-8 -left-0 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='hover:text-blue-600 font-semibold block transition-all'>About</a></li>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='hover:text-blue-600 font-semibold block transition-all'>Contact</a></li>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='hover:text-blue-600 font-semibold block transition-all'>Login</a></li>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='hover:text-blue-600 font-semibold block transition-all'>Sign
+                    up</a></li>
+              </ul>
+            </li>
+            <li class='max-lg:border-b max-lg:py-2 px-3 group relative'><a href='javascript:void(0)'
+                class='hover:text-blue-600 block font-semibold transition-all'>Feature
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current inline ml-1.5" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                    clip-rule="evenodd" data-original="#000000" />
+                </svg>
+              </a>
+
+              <ul
+                class='absolute shadow-lg bg-white space-y-3 lg:top-5 max-lg:top-8 -left-0 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='hover:text-blue-600 font-semibold block transition-all'>HR</a></li>
+                <li class='border-b py-2 '>
+                  <a href='javascript:void(0)' class='hover:text-blue-600 font-semibold block transition-all'>Timekeeping</a>
+                </li>
+                <li class='border-b py-2 '><a href='javascript:void(0)'
+                    class='hover:text-blue-600 font-semibold block transition-all'>Payroll</a></li>
+              </ul>
+            </li>
+          
+          </ul>
+        </div>
+
+        <!-- <div class='flex ml-auto gap-4'>
+          <button
+            class='bg-[#2C48A4] hover:bg-[#fcd65a] text-white hover:text-black  flex items-center transition-all font-semibold rounded-md px-5 py-3' onclick="goToRegistrationPage()">Get
+            started
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2" viewBox="0 0 492.004 492.004">
+              <path
+                d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+                data-original="#000000" />
+            </svg>
+          </button>
+
+          <button
+            class='bg-[#2C48A4] hover:bg-[#fcd65a] text-white hover:text-black  flex items-center transition-all font-semibold rounded-md px-5 py-3' onclick="goToLoginPage()">Login
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2" viewBox="0 0 492.004 492.004">
+              <path
+                d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+                data-original="#000000" />
+            </svg>
+          </button>
+        </div> -->
+        <div class='flex ml-auto gap-4'>
+          <!-- Primary Action (Get Started) -->
+          <button
+            class='bg-[#2C48A4] hover:bg-[#1A337C] text-white flex items-center transition-all font-semibold rounded-md px-5 py-3' 
+            onclick="goToRegistrationPage()">
+            Get started
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2" viewBox="0 0 492.004 492.004">
+              <path
+                d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+                data-original="#ffffff" />
+            </svg>
+          </button>
+        
+          <!-- Secondary Action (Login) -->
+          <!-- <button
+            class='bg-[#4A5568] hover:bg-[#2D3748] text-white flex items-center transition-all font-semibold rounded-md px-5 py-3' 
+            onclick="goToLoginPage()">
+            Login
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2" viewBox="0 0 492.004 492.004">
+              <path
+                d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+                data-original="#ffffff" />
+            </svg>
+          </button> -->
+          <button
+              class='bg-[#4A5568] hover:bg-[#2D3748] text-white  flex items-center transition-all font-semibold rounded-md px-5 py-3 gap-1' 
+              onclick="goToLoginPage()"> Login
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+              </svg>
+          </button>
+        </div>
+    </header>
+
+    <div class="lg:min-h-[560px] px-4 sm:px-10">
+      <div class="max-w-7xl w-full mx-auto py-16">
+        <div class="grid lg:grid-cols-2 justify-center items-center gap-10">
+          <div>
+            <h1 class="md:text-5xl text-4xl font-bold mb-6 "><br>Automate HR, Timekeeping <br/>& Payroll <br> in One Platform
+            </h1>
+            <p class="text-base leading-relaxed">Process payroll error-free, track attendance effortlessly, and manage HR tasks with confidence. Stay compliant, reduce manual work, and empower employees with self-service tools – all powered by AI-driven automation.</p>
+            <!-- <div class="flex flex-wrap gap-y-4 gap-x-8 mt-8">
+              <button
+                class='bg-black hover:bg-[#222] text-white flex items-center transition-all font-semibold rounded-md px-5 py-4'>Start Free Trial
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2"
+                  viewBox="0 0 492.004 492.004">
+                  <path
+                    d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+                    data-original="#000000" />
+                </svg>
+              </button>
+              <button
+                class='bg-black hover:bg-[#222] text-white flex items-center transition-all font-semibold rounded-md px-5 py-4'>Watch a Demo
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2"
+                  viewBox="0 0 492.004 492.004">
+                  <path
+                    d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+                    data-original="#000000" />
+                </svg>
+              </button>
+            </div> -->
+            <div class="flex flex-wrap gap-y-4 gap-x-8 mt-8">
+              <!-- Free Trial Button -->
+              <button class="bg-[#fcd65a] hover:bg-[#f9d163] text-black flex items-center transition-all font-semibold rounded-md px-5 py-4 group" onclick="goToRegistrationPage()">
+                Start Free Trial
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </button>
+            
+              <!-- Demo Button -->
+              <button class="bg-[#2C48A4] hover:bg-[#5188f7] text-white flex items-center transition-all font-semibold rounded-md px-5 py-4 group" onclick="goToMarketingDemoVid()">
+                Watch a Demo
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <script >
+                function goToMarketingDemoVid(){
+                  alert("Demo video here");
+                }
+              
+                function goToRegistrationPage(){
+                  alert("Registration page here");
+                }
+              
+              </script>
+            </div>
+          </div>
+          <div class="max-lg:mt-12 h-full">
+            <img src="assets/images/Hero.png" alt="banner img" class="mt-8 w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="mt-28 px-4 sm:px-10">
+      <div class="max-w-7xl w-full mx-auto">
+        <div class="grid lg:grid-cols-2 items-center gap-10">
+          <div class="">
+            <h2 class="md:text-4xl text-3xl font-semibold mb-6">A better way to find engaging content</h2>
+            <p>Laboris qui Lorem ad tempor ut reprehenderit. Nostrud anim nulla officia ea sit deserunt. Eu eu quis anim
+              aute Laboris qui Lorem ad tempor ut reprehenderit. Eu eu quis anim aute.</p>
+              <button class="bg-blue-600 hover:bg-blue-700 text-white flex items-center transition-all font-semibold rounded-md px-5 py-4 group" onclick="goToMarketingDemoVid()">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-8">
+            <div
+              class="text-center bg-white shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] transition-all rounded-xl p-6">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="fill-blue-600 w-12 inline-block bg-blue-100 p-3 rounded-full" viewBox="0 0 32 32">
+                <path
+                  d="M28.068 12h-.128a.934.934 0 0 1-.864-.6.924.924 0 0 1 .2-1.01l.091-.091a2.938 2.938 0 0 0 0-4.147l-1.511-1.51a2.935 2.935 0 0 0-4.146 0l-.091.091A.956.956 0 0 1 20 4.061v-.129A2.935 2.935 0 0 0 17.068 1h-2.136A2.935 2.935 0 0 0 12 3.932v.129a.956.956 0 0 1-1.614.668l-.086-.091a2.935 2.935 0 0 0-4.146 0l-1.516 1.51a2.938 2.938 0 0 0 0 4.147l.091.091a.935.935 0 0 1 .185 1.035.924.924 0 0 1-.854.579h-.128A2.935 2.935 0 0 0 1 14.932v2.136A2.935 2.935 0 0 0 3.932 20h.128a.934.934 0 0 1 .864.6.924.924 0 0 1-.2 1.01l-.091.091a2.938 2.938 0 0 0 0 4.147l1.51 1.509a2.934 2.934 0 0 0 4.147 0l.091-.091a.936.936 0 0 1 1.035-.185.922.922 0 0 1 .579.853v.129A2.935 2.935 0 0 0 14.932 31h2.136A2.935 2.935 0 0 0 20 28.068v-.129a.956.956 0 0 1 1.614-.668l.091.091a2.935 2.935 0 0 0 4.146 0l1.511-1.509a2.938 2.938 0 0 0 0-4.147l-.091-.091a.935.935 0 0 1-.185-1.035.924.924 0 0 1 .854-.58h.128A2.935 2.935 0 0 0 31 17.068v-2.136A2.935 2.935 0 0 0 28.068 12ZM29 17.068a.933.933 0 0 1-.932.932h-.128a2.956 2.956 0 0 0-2.083 5.028l.09.091a.934.934 0 0 1 0 1.319l-1.511 1.509a.932.932 0 0 1-1.318 0l-.09-.091A2.957 2.957 0 0 0 18 27.939v.129a.933.933 0 0 1-.932.932h-2.136a.933.933 0 0 1-.932-.932v-.129a2.951 2.951 0 0 0-5.028-2.082l-.091.091a.934.934 0 0 1-1.318 0l-1.51-1.509a.934.934 0 0 1 0-1.319l.091-.091A2.956 2.956 0 0 0 4.06 18h-.128A.933.933 0 0 1 3 17.068v-2.136A.933.933 0 0 1 3.932 14h.128a2.956 2.956 0 0 0 2.083-5.028l-.09-.091a.933.933 0 0 1 0-1.318l1.51-1.511a.932.932 0 0 1 1.318 0l.09.091A2.957 2.957 0 0 0 14 4.061v-.129A.933.933 0 0 1 14.932 3h2.136a.933.933 0 0 1 .932.932v.129a2.956 2.956 0 0 0 5.028 2.082l.091-.091a.932.932 0 0 1 1.318 0l1.51 1.511a.933.933 0 0 1 0 1.318l-.091.091A2.956 2.956 0 0 0 27.94 14h.128a.933.933 0 0 1 .932.932Z"
+                  data-original="#000000" />
+                <path d="M16 9a7 7 0 1 0 7 7 7.008 7.008 0 0 0-7-7Zm0 12a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Z"
+                  data-original="#000000" />
+              </svg>
+              <h3 class="text-base font-semibold mt-6 mb-2">Payroll Automation</h3>
+              <a href="javascript:void(0);" class="text-blue-600 font-bold inline-block hover:underline">Learn more</a>
+            </div>
+            <div
+              class="text-center bg-white hover:shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] transition-all rounded-xl p-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 inline-block bg-blue-100 p-3 rounded-full"
+                viewBox="0 0 682.667 682.667">
+                <defs>
+                  <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                    <path d="M0 512h512V0H0Z" data-original="#000000" />
+                  </clipPath>
+                </defs>
+                <g fill="none" class="stroke-blue-600" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-miterlimit="10" stroke-width="40" clip-path="url(#a)"
+                  transform="matrix(1.33 0 0 -1.33 0 682.667)">
+                  <path
+                    d="M256 492 60 410.623v-98.925C60 183.674 137.469 68.38 256 20c118.53 48.38 196 163.674 196 291.698v98.925z"
+                    data-original="#000000" />
+                  <path d="M178 271.894 233.894 216 334 316.105" data-original="#000000" />
+                </g>
+              </svg>
+              <h3 class="text-base font-semibold mt-6 mb-2">Compliance & Security</h3>
+              <a href="javascript:void(0);" class="text-blue-600 font-bold inline-block hover:underline">Learn more</a>
+            </div>
+            <div
+              class="text-center bg-white hover:shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] transition-all rounded-xl p-6">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="fill-blue-600 w-12 inline-block bg-blue-100 p-3 rounded-full" viewBox="0 0 512.001 512.001">
+                <path
+                  d="M271.029 0c-33.091 0-61 27.909-61 61s27.909 61 61 61 60-27.909 60-61-26.909-61-60-61zm66.592 122c-16.485 18.279-40.096 30-66.592 30-26.496 0-51.107-11.721-67.592-30-14.392 15.959-23.408 36.866-23.408 60v15c0 8.291 6.709 15 15 15h151c8.291 0 15-6.709 15-15v-15c0-23.134-9.016-44.041-23.408-60zM144.946 460.404 68.505 307.149c-7.381-14.799-25.345-20.834-40.162-13.493l-19.979 9.897c-7.439 3.689-10.466 12.73-6.753 20.156l90 180c3.701 7.423 12.704 10.377 20.083 6.738l19.722-9.771c14.875-7.368 20.938-25.417 13.53-40.272zM499.73 247.7c-12.301-9-29.401-7.2-39.6 3.9l-82 100.8c-5.7 6-16.5 9.6-22.2 9.6h-69.901c-8.401 0-15-6.599-15-15s6.599-15 15-15h60c16.5 0 30-13.5 30-30s-13.5-30-30-30h-78.6c-7.476 0-11.204-4.741-17.1-9.901-23.209-20.885-57.949-30.947-93.119-22.795-19.528 4.526-32.697 12.415-46.053 22.993l-.445-.361-21.696 19.094L174.28 452h171.749c28.2 0 55.201-13.5 72.001-36l87.999-126c9.9-13.201 7.2-32.399-6.299-42.3z"
+                  data-original="#000000" />
+              </svg>
+              <h3 class="text-base font-semibold mt-6 mb-2">Employee Self-Service</h3>
+              <a href="javascript:void(0);" class="text-blue-600 font-bold inline-block hover:underline">Learn more</a>
+            </div>
+            <div
+              class="text-center bg-white hover:shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] transition-all rounded-xl p-6">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="fill-blue-600 w-12 inline-block bg-blue-100 p-3 rounded-full" viewBox="0 0 24 24">
+                <g fill-rule="evenodd" clip-rule="evenodd">
+                  <path
+                    d="M17.03 8.97a.75.75 0 0 1 0 1.06l-4.2 4.2a.75.75 0 0 1-1.154-.114l-1.093-1.639L8.03 15.03a.75.75 0 0 1-1.06-1.06l3.2-3.2a.75.75 0 0 1 1.154.114l1.093 1.639L15.97 8.97a.75.75 0 0 1 1.06 0z"
+                    data-original="#000000" />
+                  <path
+                    d="M13.75 9.5a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-1.25H14.5a.75.75 0 0 1-.75-.75z"
+                    data-original="#000000" />
+                  <path
+                    d="M3.095 3.095C4.429 1.76 6.426 1.25 9 1.25h6c2.574 0 4.57.51 5.905 1.845C22.24 4.429 22.75 6.426 22.75 9v6c0 2.574-.51 4.57-1.845 5.905C19.571 22.24 17.574 22.75 15 22.75H9c-2.574 0-4.57-.51-5.905-1.845C1.76 19.571 1.25 17.574 1.25 15V9c0-2.574.51-4.57 1.845-5.905zm1.06 1.06C3.24 5.071 2.75 6.574 2.75 9v6c0 2.426.49 3.93 1.405 4.845.916.915 2.419 1.405 4.845 1.405h6c2.426 0 3.93-.49 4.845-1.405.915-.916 1.405-2.419 1.405-4.845V9c0-2.426-.49-3.93-1.405-4.845C18.929 3.24 17.426 2.75 15 2.75H9c-2.426 0-3.93.49-4.845 1.405z"
+                    data-original="#000000" />
+                </g>
+              </svg>
+              <h3 class="text-base font-semibold mt-6 mb-2">Time & Attendance Tracking</h3>
+              <a href="javascript:void(0);" class="text-blue-600 font-bold inline-block hover:underline">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     -->
+     <div class="mt-28 px-4 sm:px-10">
+      <div class="max-w-7xl w-full mx-auto">
+        <div class="grid lg:grid-cols-2 items-center gap-10">
+          <div class="">
+            <h2 class="md:text-4xl text-3xl font-semibold mb-6">Why Choose <br><i class="font-bold">Compensation Ledger</i>?</h2>
+            <p class="text-lg text-gray-600">Transform your HR operations with an integrated platform that:
+              <ul class="space-y-3 mt-4">
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-green-600 mr-2" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  Automates payroll processing and tax calculations
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-green-600 mr-2" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  Ensures 100% compliance with labor regulations
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-green-600 mr-2" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  Reduces manual errors by 90%+ through automation
+                </li>
+              </ul>
+            </p>
+            <button class="bg-green-600 hover:bg-green-700 text-white flex items-center transition-all font-semibold rounded-md px-6 py-4 group mt-8">
+              See How It Works
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-8">
+            <!-- Smart Recruitment & Rostering Card -->
+            <div class="bg-white shadow-lg hover:shadow-xl transition-all rounded-xl p-6 border border-gray-100">
+              <div class="bg-teal-100 w-max p-3 rounded-full mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-teal-600" viewBox="0 0 24 24">
+                  <path d="M15 14c-2.67 0-8 1.33-8 4v2h16v-2c0-2.67-5.33-4-8-4zm-9-4V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/>
+                </svg>
+              </div>
+              <center><h3 class="text-xl font-semibold mt-6 mb-3"><a href="javascript:returnPhotosOfRecruitmentModule();" class="text-blue-600 font-bold inline-block hover:underline">Smart Recruitment </a></h3></center>
+              <p class="text-gray-600 text-sm">
+                Automate hiring workflows with AI-driven candidate matching, interview scheduling, 
+                and dynamic staff rostering. Maintain a centralized talent pool for quick hiring needs.
+              </p>
+            </div>
+            
+            <!-- Time Tracking Card -->
+            <div class="bg-white shadow-lg hover:shadow-xl transition-all rounded-xl p-6 border border-gray-100">
+              <div class="bg-orange-100 w-max p-3 rounded-full mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-orange-600" viewBox="0 0 24 24">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                </svg>
+              </div>
+              <center><h3 class="text-xl font-semibold mt-6 mb-3"><a href="javascript:returnPhotosOfTimekeepingModule();" class="text-blue-600 font-bold inline-block hover:underline">Time & Attendance</a></h3>
+              <p class="text-gray-600 text-sm">Real-time tracking with biometric validation and overtime alerts.</p></center>
+            </div>
+
+            <!-- Payroll Automation Card -->
+            <div class="bg-white shadow-lg hover:shadow-xl transition-all rounded-xl p-6 border border-gray-100">
+              <div class="bg-green-100 w-max p-3 rounded-full mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-green-600" viewBox="0 0 24 24">
+                  <path d="M17 9H7V7h10m0 6H7v-2h10m-3 6H7v-2h7M12 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/>
+                </svg>
+              </div>
+              <center><h3 class="text-xl font-semibold mt-6 mb-3"><a href="javascript:returnPhotosOfPayrollModule();" class="text-blue-600 font-bold inline-block hover:underline">Payroll Automation</a></h3></center>
+              <p class="text-gray-600 text-sm">Process payroll accurately across multiple states/countries with auto-tax calculations and direct deposit.</p>
+            </div>
+    
+            
+    
+            <!-- Employee Self-Service Card -->
+            <div class="bg-white shadow-lg hover:shadow-xl transition-all rounded-xl p-6 border border-gray-100">
+              <div class="bg-purple-100 w-max p-3 rounded-full mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-purple-600" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+            <center><h3 class="text-xl font-semibold mt-6 mb-3"><a href="javascript:returnPhotosOfEmployeePortal();" class="text-blue-600 font-bold inline-block hover:underline">Employee Self-Service</a></h3></center>
+              <p class="text-gray-600 text-sm">24/7 access to payslips, time-off requests, and benefits management.</p>
+            </div>
+            <script>
+              function returnPhotosOfRecruitmentModule(){
+                alert("recruitment module here")
+              }
+              
+              function returnPhotosOfTimekeepingModule(){
+                alert("timekeeping module here")
+              }
+              
+              function returnPhotosOfPayrollModule(){
+                alert("payroll module here")
+              }
+
+              function returnPhotosOfEmployeePortal(){
+                alert("employee portal here")
+              }
+
+            </script>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="px-4 sm:px-10 mt-28">
+      <div class="max-w-7xl w-full mx-auto">
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="col-span-2">
+            <h2 class="md:text-4xl text-3xl font-semibold mb-6">Testimonials from known organizations</h2>
+            <p>Veniam proident aute magna anim excepteur et ex consectetur velit ullamco veniam minim aute sit. Elit
+              occaecat officia et laboris Lorem minim. Officia do aliqua adipisicing ullamco in.</p>
+          </div>
+          <div class="flex space-x-4 items-end justify-end">
+            <div
+              class="bg-white w-10 h-10 grid items-center justify-center rounded-full rotate-90 shrink-0 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-[#333] inline" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                  d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                  clip-rule="evenodd" data-original="#000000"></path>
+              </svg>
+            </div>
+            <div
+              class="bg-black w-10 h-10 grid items-center justify-center rounded-full -rotate-90 shrink-0 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-[#fff] inline" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                  d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                  clip-rule="evenodd" data-original="#000000"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-10 mt-16">
+          <div>
+            <div class="flex items-center">
+              <img src="https://readymadeui.com/team-1.webp" class="w-12 h-12 rounded-full" />
+              <div class="ml-4">
+                <h4 class="font-semibold">John Doe</h4>
+                <p class="mt-1 text-xs text-gray-400">Founder of Rubik</p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <p>Since subscribing with the software, we’ve reduced payroll processing time by 70%.</p>
+            </div>
+            <div class="flex space-x-2 mt-6">
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center">
+              <img src="https://readymadeui.com/team-2.webp" class="w-12 h-12 rounded-full" />
+              <div class="ml-4">
+                <h4 class="font-semibold">Mark Adair</h4>
+                <p class="mt-1 text-xs text-gray-400">Founder of Alpha</p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <p>Tax compliance used to stress our team – now it’s automated. A lifesaver!</p>
+            </div>
+            <div class="flex space-x-2 mt-6">
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center">
+              <img src="https://readymadeui.com/team-3.webp" class="w-12 h-12 rounded-full" />
+              <div class="ml-4">
+                <h4 class="font-semibold">Simon Konecki</h4>
+                <p class="mt-1 text-xs text-gray-400">Founder of Labar</p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <p>The after sales-support was amazing.The developers are very approachable and always to deliver the needed resolution for all the inquiries and assistance was impressively prompt.</p>
+            </div>
+            <div class="flex space-x-2 mt-6">
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+              <svg class="w-5 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="px-4 sm:px-10 mt-20 lg:mt-28">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+          <div class="col-span-2">
+            <h2 class="md:text-5xl text-3xl font-bold mb-6 text-gray-900">
+              Trusted by Industry Leaders
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Join with known companies revolutionizing their operations with our platform. 
+              <br>Here's what some of our notable clients have to say about their experience.
+            </p>
+          </div>
+          <!-- testimonials sliding button -->
+          <!-- <div class="flex space-x-4 items-center justify-end md:justify-start">
+            <button class="bg-gray-100 hover:bg-gray-200 w-12 h-12 grid place-items-center rounded-full transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+              </svg>
+            </button>
+            <button class="bg-black hover:bg-gray-800 w-12 h-12 grid place-items-center rounded-full transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+              </svg>
+            </button>
+          </div> -->
+        </div>
+    
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center">
+              <img src="https://readymadeui.com/team-1.webp" 
+                   class="w-14 h-14 rounded-full border-2 border-white shadow-md" 
+                   alt="John Doe" />
+              <div class="ml-4">
+                <h4 class="font-bold text-gray-900">John Doe</h4>
+                <p class="text-sm text-gray-500 mt-1">Founder of Rubik</p>
+              </div>
+            </div>
+            <p class="mt-6 text-gray-700 leading-relaxed italic">
+              "Since subscribing with the software, we've reduced payroll processing time by 70% - 
+              a game-changer for our HR operations and employee satisfaction."
+            </p>
+            <div class="mt-6 flex items-center">
+              <div class="flex space-x-1">
+                <!-- Full stars -->
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <!-- Repeat 4 more times -->
+                <!-- Partial star -->
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <!-- ... (other stars) -->
+              </div>
+              <span class="ml-2 text-sm font-medium text-gray-500">March 14, 2025</span>
+            </div>
+          </div>
+    
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center">
+              <img src="https://readymadeui.com/team-2.webp" 
+                   class="w-14 h-14 rounded-full border-2 border-white shadow-md" 
+                   alt="Mark Adair" />
+              <div class="ml-4">
+                <h4 class="font-bold text-gray-900">Mark Adair</h4>
+                <p class="text-sm text-gray-500 mt-1">Founder of Alpha</p>
+              </div>
+            </div>
+            <p class="mt-6 text-gray-700 leading-relaxed italic">
+              "Tax compliance used to consume 20+ hours weekly - now fully automated. 
+              Reclaimed $150k+ in productivity costs annually!"
+            </p>
+            <div class="mt-6 flex items-center">
+              <div class="flex space-x-1">
+                <!-- 5 full stars -->
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <!-- Repeat 4 more times -->
+                <!-- Partial star -->
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+              <span class="ml-2 text-sm font-medium text-gray-500">March 14, 2025</span>
+            </div>
+          </div>
+    
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center">
+              <img src="https://readymadeui.com/team-3.webp" 
+                   class="w-14 h-14 rounded-full border-2 border-white shadow-md" 
+                   alt="Simon Konecki" />
+              <div class="ml-4">
+                <h4 class="font-bold text-gray-900">Simon Konecki</h4>
+                <p class="text-sm text-gray-500 mt-1">Founder of Labar</p>
+              </div>
+            </div>
+            <p class="mt-6 text-gray-700 leading-relaxed italic">
+              "24/7 support with average 15-minute response time. The team consistently 
+              delivers solutions 2x faster than previous vendors."
+            </p>
+            <div class="mt-6 flex items-center">
+              <div class="flex space-x-1">
+                <!-- Full stars -->
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <!-- Repeat 4 more times -->
+                <!-- Partial star -->
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <!-- ... (other stars) -->
+              </div>
+              <span class="ml-2 text-sm font-medium text-gray-500">March 14, 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="px-4 sm:px-10 mt-28">
+      <div class="max-w-7xl w-full mx-auto">
+        <div class="grid md:grid-cols-2 items-center gap-10">
+          <div class="w-full h-full">
+            <img src="https://readymadeui.com/team-image.webp" alt="Premium Benefits"
+              class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h2 class="md:text-4xl text-3xl font-semibold mb-6">Fresh Ideas for your business design</h2>
+            <p>Veniam proident aute magna anim excepteur et ex consectetur velit ullamco veniam minim aute
+              sit. Elit
+              occaecat officia et laboris Lorem minim. Officia do aliqua adipisicing ullamco in. anim excepteur et ex
+              consectetur velit ullamco veniam minim aute sit.</p>
+
+            <div class="mt-8">
+              <div class="flex items-center">
+                <img src="https://readymadeui.com/profile_2.webp" class="w-12 h-12 rounded-full" />
+                <div class="ml-4">
+                  <h4 class="font-semibold text-base">John Doe</h4>
+                </div>
+              </div>
+              <div class="mt-4">
+                <p>Veniam proident aute magna anim excepteur et ex consectetur velit
+                  ullamco veniam minim aute sit. Elit occaecat officia et laboris Lorem minim.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="px-4 sm:px-10 mt-28">
+      <div class="max-w-7xl w-full mx-auto grid md:grid-cols-2 justify-center items-center gap-10">
+        <div>
+          <h2 class="md:text-4xl text-3xl font-semibold mb-6">Migration, Integration and Implementation</h2>
+          <p class="text-lg text-gray-600">
+            <ul class="space-y-3 mt-4">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-green-600 mr-2" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <b class ="mr-2">Set Up:</b> Configure your company policies, payroll cycles, and employee data.
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-green-600 mr-2" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <b class ="mr-2">Automate:</b> Sync time-tracking tools, approve payroll with one click.                .
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-green-600 mr-2" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <b class ="mr-2">Stay Compliant: </b> Get alerts for tax deadlines and regulatory changes.
+              </li>
+            </ul>
+          </p>
+          <button
+            class="bg-black hover:bg-[#222] text-white flex items-center transition-all font-semibold rounded-md px-5 py-4 mt-8">
+            Read more
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2" viewBox="0 0 492.004 492.004">
+              <path
+                d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+                data-original="#000000"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="w-full h-full">
+          <img src="https://readymadeui.com/login-image.webp" alt="feature" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div> -->
+
+    <div class="px-4 sm:px-10 mt-28 mb-10">
+      <div class="max-w-7xl w-full mx-auto grid md:grid-cols-2 justify-center items-center gap-10">
+        <div>
+          <h2 class="md:text-4xl text-3xl font-semibold mb-6">Seamless System Deployment in 3 Phases</h2>
+          <p class="text-lg text-gray-600">
+            <ul class="space-y-4 mt-4">
+              <!-- Phase 1: Data Migration -->
+              <li class="flex items-start">
+                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-blue-600" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 14H8c-.55 0-1-.45-1-1s.45-1 1-1h5c.55 0 1 .45 1 1s-.45 1-1 1zm3-4H8c-.55 0-1-.45-1-1s.45-1 1-1h8c.55 0 1 .45 1 1s-.45 1-1 1zm0-4H8c-.55 0-1-.45-1-1s.45-1 1-1h8c.55 0 1 .45 1 1s-.45 1-1 1z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Phase 1: Data Migration</h3>
+                  <p class="text-gray-600">Secure transfer of employee records, payroll history, and compliance documents with 256-bit encryption.</p>
+                </div>
+              </li>
+    
+              <!-- Phase 2: Setup -->
+              <li class="flex items-start">
+                <div class="bg-purple-100 p-2 rounded-full mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-purple-600" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Phase 2: System Setup</h3>
+                  <p class="text-gray-600">Configure payroll cycles, tax profiles, leave policies, and role-based access controls.</p>
+                </div>
+              </li>
+    
+              <!-- Phase 3: Automation -->
+              <li class="flex items-start">
+                <div class="bg-green-100 p-2 rounded-full mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-green-600" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Phase 3: Automation Enablement</h3>
+                  <p class="text-gray-600">Activate smart payroll processing, time tracking integrations, and compliance alerts.</p>
+                </div>
+              </li>
+            </ul>
+          </p>
+          <button class="bg-green-600 hover:bg-green-700 text-white flex items-center transition-all font-semibold rounded-md px-6 py-4 group mt-8">
+            View Deployment Plan
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="w-full h-full">
+          <img src="assets/images/SystemDeployment.png" alt="Implementation process visualization" class="w-full h-full object-cover rounded-xl shadow-lg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="mt-28 px-4 sm:px-10 bg-blue-100">
+      <div
+        class="min-h-[400px] relative h-full max-w-2xl mx-auto flex flex-col justify-center items-center text-center px-6 py-16">
+        <h2 class="md:text-4xl text-3xl font-semibold mb-6">Put pricing</h2>
+        <p>Veniam proident aute magna anim excepteur et ex consectetur velit ullamco veniam minim
+          aute sit. Elit occaecat officia et laboris Lorem minim. Officia do aliqua adipisicing ullamco in. consectetur
+          velit ullamco veniam minim aute sit.</p>
+        <button
+          class="bg-black hover:bg-[#222] text-white flex items-center transition-all font-semibold rounded-md px-5 py-4 mt-8">
+          Get started
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-[14px] fill-current ml-2" viewBox="0 0 492.004 492.004">
+            <path
+              d="M484.14 226.886 306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"
+              data-original="#000000"></path>
+          </svg>
+        </button> 
+        
+      </div>
+    </div>-->
+
+    <div class="p-4  min-h-[100%]">
+  <div class="max-w-5xl max-lg:max-w-2xl mx-auto">
+    <div class="text-center">
+      <h2 class="text-slate-900 text-3xl font-bold mb-4">Pricing Options</h2>
+      <p class="text-sm text-slate-500">Choose the plan that best fits your business needs</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6 mt-10 max-sm:max-w-sm max-sm:mx-auto">
+      <!-- Perpetual License Card -->
+      <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+        <h3 class="text-slate-900 text-xl font-semibold mb-2">Perpetual License</h3>
+        <p class="text-sm text-slate-500">One-time investment for on-premise deployment</p>
+
+        <div class="mt-6">
+          <h3 class="text-slate-900 text-2xl font-semibold">$2,999 <sub class="text-slate-500 text-sm font-medium">one-time</sub></h3>
+        </div>
+
+        <div class="mt-6">
+          <h4 class="text-slate-900 text-lg font-semibold mb-2">Features</h4>
+          
+          <ul class="mt-6 space-y-4">
+            <li class="flex items-center text-sm text-slate-600 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-blue-500" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"/>
+              </svg>
+              One-time payment (no recurring fees)
+            </li>
+            <li class="flex items-center text-sm text-slate-600 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-blue-500" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"/>
+              </svg>
+              On-premise server installation
+            </li>
+            <li class="flex items-center text-sm text-slate-600 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-blue-500" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"/>
+              </svg>
+              Full source code access
+            </li>
+            <li class="flex items-center text-sm text-slate-400 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-red-500" viewBox="0 0 24 24">
+                <path d="M16.707 7.293a1 1 0 0 0-1.414 0L12 10.586 8.707 7.293a1 1 0 1 0-1.414 1.414L10.586 12l-3.293 3.293a1 1 0 1 0 1.414 1.414L12 13.414l3.293 3.293a1 1 0 0 0 1.414-1.414L13.414 12l3.293-3.293a1 1 0 0 0 0-1.414z"/>
+              </svg>
+              No included support/maintenance
+            </li>
+          </ul>
+
+          <button type="button" class="w-full mt-6 px-4 py-3 text-sm font-medium text-blue-600 bg-white border border-blue-600 hover:bg-blue-50 rounded-lg transition-colors">
+            Purchase License
+          </button>
+        </div>
+      </div>
+
+      <!-- Cloud Subscription Card (Highlighted) -->
+      <div class="border-2 border-blue-500 bg-gradient-to-b from-blue-50 to-white rounded-xl p-6 transform hover:scale-[1.01] transition-transform shadow-lg">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-slate-900 text-xl font-semibold">Cloud Subscription</h3>
+          <span class="px-3 py-1 text-xs font-bold text-white bg-blue-500 rounded-full">Most Popular</span>
+        </div>
+        <p class="text-sm text-slate-500">Fully managed cloud solution with premium support</p>
+
+        <div class="mt-6">
+          <h3 class="text-slate-900 text-2xl font-semibold">$299 <sub class="text-slate-500 text-sm font-medium">per month</sub></h3>
+        </div>
+
+        <div class="mt-6">
+          <h4 class="text-slate-900 text-lg font-semibold mb-2">Features</h4>
+          
+          <ul class="mt-6 space-y-4">
+            <li class="flex items-center text-sm text-slate-600 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"/>
+              </svg>
+              Monthly subscription (cancel anytime)
+            </li>
+            <li class="flex items-center text-sm text-slate-600 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"/>
+              </svg>
+              Fully managed cloud hosting
+            </li>
+            <li class="flex items-center text-sm text-slate-600 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"/>
+              </svg>
+              24/7 Priority Support
+            </li>
+            <li class="flex items-center text-sm text-slate-600 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"/>
+              </svg>
+              Automatic updates & maintenance
+            </li>
+          </ul>
+
+          <button type="button" class="w-full mt-6 px-4 py-3 text-sm font-bold text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-lg shadow-md transition-all">
+            Start Free Trial (14 Days)
+          </button>
+          <p class="text-xs text-center text-slate-500 mt-2">No credit card required</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+
+    <div class="mt-28 px-4 sm:px-10">
+      <div class="max-w-7xl mx-auto space-y-6">
+        <div class="mb-10">
+          <h2 class="md:text-4xl text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
+          <p>Explore common questions and find answers to help you make the most out of our services. If you don't see
+            your question here, feel free to contact us for assistance.</p>
+        </div>
+        <div class="divide-y">
+          <div>
+            <button type="button" class="w-full text-base text-left font-semibold py-6 flex items-center">
+              <span class="mr-4">How do you handle tax filing and compliance?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 fill-current ml-auto shrink-0" viewBox="0 0 124 124">
+                <path d="M112 50H12C5.4 50 0 55.4 0 62s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z"
+                  data-original="#000000" />
+              </svg>
+            </button>
+            <div class="pb-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
+                auctor arcu,
+                at fermentum dui. Maecenas
+                vestibulum a turpis in lacinia. Proin aliquam turpis at erat venenatis malesuada. Sed semper, justo
+                vitae
+                consequat fermentum, felis diam posuere ante, sed fermentum quam justo in dui. Nulla facilisi. Nulla
+                aliquam
+                auctor purus, vitae dictum dolor sollicitudin vitae. Sed bibendum purus in efficitur consequat. Fusce et
+                tincidunt arcu. Curabitur ac lacus lectus. Morbi congue facilisis sapien, a semper orci facilisis in.
+              </p>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="w-full text-base text-left font-semibold py-6 flex items-center">
+              <span class="mr-4">Can I import data from my current payroll software?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 fill-current ml-auto shrink-0" viewBox="0 0 42 42">
+                <path
+                  d="M37.059 16H26V4.941C26 2.224 23.718 0 21 0s-5 2.224-5 4.941V16H4.941C2.224 16 0 18.282 0 21s2.224 5 4.941 5H16v11.059C16 39.776 18.282 42 21 42s5-2.224 5-4.941V26h11.059C39.776 26 42 23.718 42 21s-2.224-5-4.941-5z"
+                  data-original="#000000" />
+              </svg>
+            </button>
+            <div class="hidden py-4">
+              <p>Content</p>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="w-full text-base text-left font-semibold py-6 flex items-center">
+              <span class="mr-4">Is employee data encrypted?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 fill-current ml-auto shrink-0" viewBox="0 0 42 42">
+                <path
+                  d="M37.059 16H26V4.941C26 2.224 23.718 0 21 0s-5 2.224-5 4.941V16H4.941C2.224 16 0 18.282 0 21s2.224 5 4.941 5H16v11.059C16 39.776 18.282 42 21 42s5-2.224 5-4.941V26h11.059C39.776 26 42 23.718 42 21s-2.224-5-4.941-5z"
+                  data-original="#000000" />
+              </svg>
+            </button>
+            <div class="hidden py-4">
+              <p>Content</p>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="w-full text-base text-left font-semibold py-6 flex items-center">
+              <span class="mr-4">Do you offer multi-country payroll support?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 fill-current ml-auto shrink-0" viewBox="0 0 42 42">
+                <path
+                  d="M37.059 16H26V4.941C26 2.224 23.718 0 21 0s-5 2.224-5 4.941V16H4.941C2.224 16 0 18.282 0 21s2.224 5 4.941 5H16v11.059C16 39.776 18.282 42 21 42s5-2.224 5-4.941V26h11.059C39.776 26 42 23.718 42 21s-2.224-5-4.941-5z"
+                  data-original="#000000" />
+              </svg>
+            </button>
+            <div class="hidden py-4">
+              <p>Content</p>
+            </div>
+          </div>
+          <!-- <div>
+            <button type="button" class="w-full text-base text-left font-semibold py-6 flex items-center">
+              <span class="mr-4">Is there parking available at the venue?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 fill-current ml-auto shrink-0" viewBox="0 0 42 42">
+                <path
+                  d="M37.059 16H26V4.941C26 2.224 23.718 0 21 0s-5 2.224-5 4.941V16H4.941C2.224 16 0 18.282 0 21s2.224 5 4.941 5H16v11.059C16 39.776 18.282 42 21 42s5-2.224 5-4.941V26h11.059C39.776 26 42 23.718 42 21s-2.224-5-4.941-5z"
+                  data-original="#000000" />
+              </svg>
+            </button>
+            <div class="hidden py-4">
+              <p>Content</p>
+            </div>
+          </div> -->
+          <!-- <div>
+            <button type="button" class="w-full text-base text-left font-semibold py-6 flex items-center">
+              <span class="mr-4">How can I contact the event organizers?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 fill-current ml-auto shrink-0" viewBox="0 0 42 42">
+                <path
+                  d="M37.059 16H26V4.941C26 2.224 23.718 0 21 0s-5 2.224-5 4.941V16H4.941C2.224 16 0 18.282 0 21s2.224 5 4.941 5H16v11.059C16 39.776 18.282 42 21 42s5-2.224 5-4.941V26h11.059C39.776 26 42 23.718 42 21s-2.224-5-4.941-5z"
+                  data-original="#000000" />
+              </svg>
+            </button>
+            <div class="hidden py-4">
+              <p>Content</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="px-4 sm:px-10 mt-28">
+      <div class="max-w-7xl mx-auto">
+        <div>
+          <h2 class="md:text-4xl text-3xl font-bold">HR & Payroll Insights</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+          <div class="cursor-pointer rounded overflow-hidden group">
+            <div>
+              <span class="block text-gray-400 mb-2">10 FEB 2023</span>
+              <h3 class="text-xl font-semibold group-hover:text-blue-500 transition-all">5 Common Payroll Mistakes and How to Avoid Them</h3>
+              <div class="mt-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan,
+                  nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+              </div>
+            </div>
+            <hr class="my-6" />
+            <div class="flex flex-wrap items-center gap-3">
+              <img src='https://readymadeui.com/team-1.webp' class="w-9 h-9 rounded-full" />
+              <p class="text-xs">BY MARVIN POGI</p>
+            </div>
+          </div>
+          <div class="cursor-pointer rounded overflow-hidden group">
+            <div>
+              <span class="block text-gray-400 mb-2">7 DEC 2024</span>
+              <h3 class="text-xl font-semibold group-hover:text-blue-500 transition-all">How to Transition from Manual Payroll to SaaS</h3>
+              <div class="mt-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan,
+                  nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+              </div>
+            </div>
+            <hr class="my-6" />
+            <div class="flex flex-wrap items-center gap-3">
+              <img src='https://readymadeui.com/team-2.webp' class="w-9 h-9 rounded-full" />
+              <p class="text-xs">BY MARVIN POGI</p>
+            </div>
+          </div>
+          <div class="cursor-pointer rounded overflow-hidden group">
+            <div>
+              <span class="block text-gray-400 mb-2">5 JAN 2025</span>
+              <h3 class="text-xl font-semibold group-hover:text-blue-500 transition-all">2025 Government Contributions Table Updates
+              </h3>
+              <div class="mt-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan,
+                  nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+              </div>
+            </div>
+            <hr class="my-6" />
+            <div class="flex flex-wrap items-center gap-3">
+              <img src='https://readymadeui.com/team-3.webp' class="w-9 h-9 rounded-full" />
+              <p class="text-xs">BY MARVIN POGI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-28 px-4 sm:px-10">
+      <div class="max-w-7xl mx-auto bg-gradient-to-r from-[#2867eb] via-teal-600 to-[#2ca7c9] py-16 px-6 relative">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="md:text-4xl text-3xl font-semibold mb-6 text-white">Subscribe to Our Newsletter</h2>
+          <div class="my-6">
+            <p class="text-white">Subscribe to our newsletter and stay up to date with the latest news, updates, and
+              exclusive offers. Get
+              valuable insights. Join our community today!</p>
+          </div>
+          <div
+            class="max-w-2xl left-0 right-0 mx-auto w-full bg-white p-5 flex items-center shadow-lg absolute -bottom-10 rounded-md">
+            <input type="email" placeholder="Enter your email"
+              class="w-full bg-gray-50 py-3.5 px-4 text-base focus:outline-none" />
+            <button
+              class="bg-black hover:bg-[#222] text-white flex items-center transition-all font-semibold px-5 py-4">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-28">
+      <div class="px-4 sm:px-10">
+        <div class="grid max-sm:grid-cols-1 max-xl:grid-cols-2 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
+          <div class="xl:col-span-2">
+            <a href="javascript:void(0)"><img src="assets/images/JCCompensationLedgerLogo.webp" alt="logo"
+                class='w-40 mb-6' />
+            </a>
+            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida,
+              mi eu pulvinar cursus, sem elit interdum mauris.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold mb-6">Services</h4>
+            <ul class="space-y-4">
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> HR Information System</a></li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Real-Time Attendance Processing</a></li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Automated Payroll Computations</a></li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Employee Portal and Self-service Report</a></li>
+              
+              
+            </ul>
+          </div>
+
+          <!-- <div>
+            <h4 class="text-xl font-semibold mb-6">Resources</h4>
+            <ul class="space-y-4">
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Webinars</a>
+              </li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Ebooks</a>
+              </li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Templates</a>
+              </li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Tutorials</a></li>
+            </ul>
+          </div> -->
+
+          <div>
+            <h4 class="text-xl font-semibold mb-4">About Us</h4>
+            <ul class="space-y-4">
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Our Story</a>
+              </li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Mission and
+                  Values</a></li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Team</a></li>
+              <li><a href="javascript:void(0)" class="hover:text-blue-600 flex items-center gap-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-[10px] -rotate-90"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z">
+                    </path>
+                  </svg> Testimonials</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-6" />
+      <p class='text-center mb-6'>© 2025<a href='https://readymadeui.com/' target='_blank'
+          class="hover:underline mx-1">JC Compensation Ledger</a>All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    var toggleOpen = document.getElementById('toggleOpen');
+    var toggleClose = document.getElementById('toggleClose');
+    var collapseMenu = document.getElementById('collapseMenu');
+
+    function handleClick() {
+      if (collapseMenu.style.display === 'block') {
+        collapseMenu.style.display = 'none';
+      } else {
+        collapseMenu.style.display = 'block';
+      }
+    }
+
+    toggleOpen.addEventListener('click', handleClick);
+    toggleClose.addEventListener('click', handleClick);
+
+  </script>
+</body>
+
+</html>
